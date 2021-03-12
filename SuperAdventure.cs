@@ -19,15 +19,9 @@ namespace SuperAdventure
         {
             InitializeComponent();
 
-            _player = new Player();
+            //passing values to set play object properties
+            _player = new Player(10, 10, 20, 0, 1);
 
-            //assigning values to the properties in _player object
-
-            _player.CurrentHitPoints = 10;
-            _player.MaximumHitPoints = 10;
-            _player.Gold = 20;
-            _player.ExperiencePoints = 0;
-            _player.Level = 1;
 
             //giving values to the form fields: hitpoint, gold, xp, and level. My "invisible" fields start with "lbl"
 
